@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Dinâmicas</Datag></title>
+</head>
+<body>
+    <h1>Criando Imagens Flexíveis</h1>
+    <p>Mude a resolução de seu navegador ou diminua a aba, para ver que a imagem muda de tamanho, caso queira vê-la ampliada, amplie o tamanho da janela de seu navegador.</p>
+    <picture>
+        <source media="(max-width: 790px)" srcset="imagens/paisagem-p.png" type="image/png">
+        <source media="(max-width: 1250px)" srcset="imagens/paisagem-m.png" type="image/png">
+        <img src="imagens/paisagem-g.png" alt="Paisagem de uma montanha com uma mulher sobre ela">
+    </picture>
+</body>
+</html>

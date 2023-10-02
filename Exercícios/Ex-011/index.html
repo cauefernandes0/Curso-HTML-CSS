@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <H1>Imagens dinâmicas</H1>
+    <p>Tente abrir este site em dispositivos diferentes e/ou diminua e aumente o tamanho do seu navegador.</p>
+    <picture>
+        <source media="(max-width: 550px)" srcset="imagens/wallpapersantos-m.jpg" type="image/jpg">
+        <img src="imagens/wallpapersantos-g.jpg" alt="Wallpaper Santos">
+    </picture>
+    <h1>Reproduzindo Aúdios</h1>
+    <p>Vamos aprender a reproduzir aúdios com o HTML5.</p>
+    <audio src="midia/epegueasamplefi.mp3" controls preload="metadata">
+        <p>Infelizmente o seu navegador não é compatível com o arquivo. <a href="midia/epegueasamplefi.mp3"> Para baixá-lo, clique aqui!</a></p>
+    </audio>
+    <audio preload="metadata" controls loop>
+        <source src="midia/typegunna2.mp3" type="audio/mpeg">
+        <p>Infelizmente o seu navegador não é compatível com o arquivo. <a href="midia/typegunna2.mp3"> Para baixá-lo, clique aqui!</a></p>
+    </audio>
+</body>
+</html>
