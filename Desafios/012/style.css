@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    margin-bottom: 15px;
+    padding: 40px;
+    background-color: black;
+    color: white;
+}
+header h1{
+    text-align: center;
+    font-size: 4em;
+    font-weight: bolder;
+    
+}
+header p{
+    text-align: center;
+    margin: 15px;
+    font-size: 1.1em;
+}
+header a{
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+header a:hover{
+    text-decoration: underline;
+}
+
+main{
+
+}
+main p{
+    font-size: 2em;
+    margin-left: 20px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    
+}
+#imagem1{
+    height: 100vh;
+    background: black url("imagens/background001.jpg") center center/cover no-repeat;
+    color: white;
+    margin-bottom: 30px;
+    box-shadow: 2px 3px 7px black;
+}
+#imagem1 p{
+    padding-top: 30px;
+    background-color: rgba(0, 0, 0, 0.473);
+}
+
+#imagem2{
+    height: 100vh;
+    background: black url("imagens/background002.jpg") center center/cover no-repeat;
+    background-color: rgba(0, 0, 0, 0.473);
+    
+    color: white;
+    margin-bottom: 30px;
+}
+#imagem2{
+    padding-top: 30px;
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}
+footer p{
+    text-align: center;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+footer a:hover{
+    text-decoration: underline;
+}
