@@ -3,5 +3,70 @@
 /*Todas as demais mídias*/
 
 @media print {
-    
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    }
+    body{
+        background-image: url(../imagens/back-print.jpg); /*desnecessário*/
+       
+    }
+
+    main{
+        border: 2px solid black;
+        width: 90vw;
+    }
+
+    main h1{
+        text-shadow: none;
+        color: black;
+    }
+    img#print{
+        display: block;
+    }
+    img#celular, img#pc, img#tablet, img#tv{
+        display: none;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:992px)  {  /*TABLET*/
+    body{
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+    img#tablet{
+        display: block;
+    }
+    img#celular, img#print, img#pc, img#tv{
+        display: none;
+    }
+}
+
+@media screen and (min-width:992px) and (max-width:1200px) { /*PC*/
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+        
+    }
+    main{
+        width: 500px;
+    }
+    img#pc{
+        display: block;
+    }
+    img#celular, img#print, img#tablet, img#tv{
+        display: none;
+    }
+}
+
+@media screen and (min-width:1200px){
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+    main{
+        width: 700px;
+    }
+    img#tv{
+        display: block;
+    }
+    img#celular, img#print, img#pc, img#tablet{
+        display: none;
+    }
 }
