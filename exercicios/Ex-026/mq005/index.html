@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu Responsivo</title>
-    <link rel="stylesheet" href="estilos/style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
+    <link rel="stylesheet" href="estilos/style.css">
+      <link rel="stylesheet" href="estilos/media-query.css">
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Meu site</h1>
         <span class="material-icons" id="burguer" onclick="clickMenu()">menu</span>
@@ -28,6 +29,7 @@
             <h2>Testando Media Queries</h2>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde ipsum laudantium vero similique expedita natus tempore pariatur, atque quia vel ducimus distinctio veniam debitis, praesentium facilis nobis explicabo! Fuga, ipsum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Non eaque alias assumenda iure temporibus tempora molestias nihil, rerum quaerat reiciendis minima corrupti quidem numquam sapiente impedit ducimus atque obcaecati provident! lorem</p>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et ex odit vel quod assumenda ipsa atque doloribus dolorem deleniti animi, ullam pariatur voluptas recusandae tempora sapiente, aut quos aliquam iusto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam pariatur possimus eos incidunt assumenda commodi officia perferendis placeat. Nisi officia praesentium cumque consequatur reprehenderit? Perferendis corporis repellendus et libero eaque!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias debitis provident est deserunt voluptatum tenetur aliquam sit id dolore inventore ullam pariatur porro quas laborum cupiditate similique, modi, voluptatem at. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel aut necessitatibus animi in, perspiciatis facilis nesciunt facere explicabo ex perferendis ad deleniti obcaecati odit quae nihil! Eaque enim incidunt sunt?</p>
         </article>
     </main>
     <script>
@@ -37,6 +39,14 @@
             }
             else {
                 itens.style.display = 'block'
+            }
+        }
+        function mudouTamanho(){
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            }
+            else{
+                itens.style.display = 'none'
             }
         }
     </script>

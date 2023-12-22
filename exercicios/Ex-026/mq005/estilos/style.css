@@ -14,10 +14,12 @@ header{
     color: white;
 }
 h1{
+    padding: 20px;
     text-align: center;
 }
 
 #burguer{
+    margin-top: 10px;
     background-color: rgb(27, 82, 51);
     display: block;
     color: white;
@@ -45,7 +47,7 @@ menu a{
     background-color: rgb(18, 107, 56);
     color: white;
     text-align: center;
-    border-top: 2px solid rgb(168, 168, 168);
+    border-top: 2px solid rgb(15, 136, 76);
 }
 
 menu a:hover{
